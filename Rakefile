@@ -2,7 +2,7 @@ require 'rake'
 require 'rake/rdoctask'
 require 'rake/testtask'
 
-task :default => :test
+task :default => :spec
 
 begin
   require 'jeweler'
@@ -31,5 +31,3 @@ Rake::TestTask.new(:spec) do |t|
   t.pattern = 'spec/**/*_spec.rb'
   t.verbose = false
 end
-
-

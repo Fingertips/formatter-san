@@ -1,1 +1,10 @@
 = Formatter-san
+
+Allows you to create an accessor for a formatted version of an attribute.
+
+  class Person < ActiveRecord::Base
+    formats :description
+  end
+  
+  person = Person.find(:first)
+  person.formatted_description
