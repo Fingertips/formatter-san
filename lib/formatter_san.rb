@@ -1,3 +1,4 @@
+require 'formatter_san/rubypants'
 require 'formatter_san/formatter'
 
 module FormatterSan
