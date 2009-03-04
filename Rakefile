@@ -8,10 +8,10 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
     s.name = "formatter-san"
-    s.summary = %Q{TODO}
+    s.summary = %Q{When included in a class, Formatter-san allows you to easily define a formatter decorator around an attribute.}
     s.email = "manfred@fngtps.com"
     s.homepage = "http://github.com/Manfred/formatter-san"
-    s.description = "TODO"
+    s.description = "Simple plugin to generate a formatter decorator for ActiveRecord attributes."
     s.authors = ["Manfred Stienstra"]
   end
 end
