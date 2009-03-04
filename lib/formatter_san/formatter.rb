@@ -13,7 +13,7 @@ module FormatterSan
       output = @input.to_s.dup
       output.gsub!(/(\r\n|\n|\r)/, "\n")
       output.gsub!(/\n\n+/, "\n\n")
-
+      
       in_html = false
       endtag = ''
       blocklist = output.split("\n\n").collect do |part|
@@ -22,10 +22,10 @@ module FormatterSan
           # if we find an html block, set the flag for it
           if (match = /^\s*<(h[1-6]|address|blockquote|center|div|dl|ol|pre|p|table|ul)(\w*)([^>]*)>(.*)$/.match(part))
             endtag = "</#{match[1..2].join}>"
-
+            
             end_tag_in_part = !part.index(endtag).nil?
             autoclosing_tag = (match[3][-1] == '/'[-1])
-
+            
             unless end_tag_in_part or autoclosing_tag
               in_html = true
             end
