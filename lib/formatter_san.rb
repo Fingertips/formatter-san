@@ -6,6 +6,7 @@ module FormatterSan
   def formats(*attributes)
     attributes.each do |attribute|
       define_method "formatted_#{attribute}" do
+        FormatterSan::Formatter.new(send(attribute)).format
       end
     end
   end

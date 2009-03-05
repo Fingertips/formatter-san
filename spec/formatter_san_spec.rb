@@ -12,4 +12,9 @@ describe "Model with a formatted attributes" do
   it "should have a formatted accessor" do
     @person.should.respond_to(:formatted_description)
   end
+  
+  it "should return the formatted version of and attribute through the formatted accessor" do
+    @person.description = "I'm a programmer"
+    @person.formatted_description.should == "<p>I&#8217;m a programmer</p>"
+  end
 end
