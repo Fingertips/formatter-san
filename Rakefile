@@ -13,7 +13,7 @@ begin
     s.homepage = "http://github.com/Manfred/formatter-san"
     s.description = "Simple plugin to generate a formatter decorator for ActiveRecord attributes."
     s.authors = ["Manfred Stienstra"]
-    s.files = %w(lib/formatter_san.rb lib/formatter_san/formatter.rb lib/formatter_san/rubypants.rb rails/init.rb)
+    s.files = %w(lib/formatter_san.rb lib/formatter_san/rubypants.rb lib/formatter_san/formatters/simple.rb lib/formatter_san/formatters/textile.rb rails/init.rb)
   end
 end
 

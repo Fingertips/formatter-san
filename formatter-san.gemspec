@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Manfred Stienstra"]
-  s.date = %q{2009-03-04}
+  s.date = %q{2009-03-05}
   s.description = %q{Simple plugin to generate a formatter decorator for ActiveRecord attributes.}
   s.email = %q{manfred@fngtps.com}
-  s.files = ["lib/formatter_san.rb", "lib/formatter_san/formatter.rb", "lib/formatter_san/rubypants.rb", "rails/init.rb"]
+  s.files = ["lib/formatter_san.rb", "lib/formatter_san/rubypants.rb", "lib/formatter_san/formatters/simple.rb", "lib/formatter_san/formatters/textile.rb", "rails/init.rb"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/Manfred/formatter-san}
   s.rdoc_options = ["--inline-source", "--charset=UTF-8"]
