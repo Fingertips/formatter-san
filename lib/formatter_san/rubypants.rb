@@ -176,7 +176,7 @@
 #
 
 
-class RubyPants < String
+class RubyPants < String # :nodoc:
   VERSION = "0.2"
 
   # Create a new RubyPants instance with the text in +string+.
