@@ -41,7 +41,7 @@ module FormatterSan
             in_html = false
             endindex = index + endtag.length
             unless part.length == endindex
-              part[0..(endindex-1)] + "\n\n" + part[endindex..-1].format.exiguous
+              part[0..(endindex-1)] + "\n\n" + self.class.new(part[endindex..-1]).format
             else
               part
             end
