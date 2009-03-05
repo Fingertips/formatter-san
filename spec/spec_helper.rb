@@ -31,6 +31,7 @@ ActiveRecord::Base.establish_connection(:adapter => 'sqlite3', :dbfile => ':memo
 
 require 'rubygems'
 require 'bacon'
+require 'facon'
 
 $:.unshift File.join(root, 'lib')
 $:.unshift File.join(root, 'spec')
