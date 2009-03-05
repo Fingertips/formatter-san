@@ -13,6 +13,10 @@ module FormatterSan
       case options[:as]
       when :simple
         FormatterSan::Formatters::Simple.format(@input)
+      when :textile
+        FormatterSan::Formatters::Textile.format(@input)
+      else
+        raise ArgumentError, "Unknown formatter: `#{options[:as]}'"
       end
     end
   end

@@ -1,6 +1,10 @@
+gem 'RedCloth', '> 4.0'
+require 'RedCloth'
+
 require 'formatter_san/rubypants'
 require 'formatter_san/formatter'
 require 'formatter_san/formatters/simple'
+require 'formatter_san/formatters/textile'
 
 module FormatterSan
   # Adds accessors named formatted_attribute_name to the model which return the string value of the attribute formatted.
